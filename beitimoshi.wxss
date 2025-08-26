@@ -1,0 +1,69 @@
+/* pages/product/beitimoshi/beitimoshi.wxss */
+page{
+  width:100%;
+  height: 100%;
+}
+.dati{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dati scroll-view{
+  width: 94%;
+  height: 100vh;
+}
+.datiTop{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  flex-direction:row;
+}
+.datiTopLeft{
+  width: 50%;
+  height: 100%;
+}
+.datiTopRight{
+  flex:1;
+  font-size: 28rpx;
+  text-align: right;
+  padding-right: 20rpx;
+  line-height: 60rpx;
+}
+.dati_daxuanTimu{
+  width:100%;
+  font-size: 36rpx;
+}
+.dati_daxuan button{
+  line-height: 50rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 35rpx 0;
+}
+.dati_daxuanLeft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diBu{
+  width: 100%;
+  height: 100rpx;
+  position:absolute;
+  bottom:0;
+  display:flex;
+  flex-direction:row;
+}
+.diBuLeft{
+  width: 35%;
+  height: 100%;
+}
+.diBuCenter{
+  flex:1;
+}
+.diBubutton{
+  margin:0 10rpx;
+  font-size: 28rpx;
+}

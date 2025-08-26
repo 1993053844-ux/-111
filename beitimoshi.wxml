@@ -1,0 +1,58 @@
+<!--pages/product/beitimoshi/beitimoshi.wxml-->
+<view class="dati">
+ <scroll-view scroll-y>
+ <view class="datiTop">
+  <view class="datiTopLeft"></view>
+  <view class="datiTopRight">{{timuIndex+1}} / {{timuArray.length}}</view>
+ </view>
+
+
+
+
+ <view class="dati_daxuan">
+     <view class="dati_daxuanTimu">（单选）单调有界不收敛</view>
+     <block>
+      <button>
+      <view class="dati_daxuanLeft"></view>
+      <view class="dati_daxuanRight"></view>
+      </button>
+       
+    </block>
+   </view>
+
+
+ <!--单选-->
+   <view class="dati_daxuan" wx:if="{{timuArray[timuIndex].tixing === '单选'}}">
+     <view class="dati_daxuanTimu">（单选）{{timuArray[timuIndex].timu}}</view>
+     <block wx:for="{{timuArray[timuIndex].tixuanxiang}}">
+      <button>
+      <view class="dati_daxuanLeft">{{item.xuanxiang}}.</view>
+      <view class="dati_daxuanRight">{{item.xuanxiangtitle}}</view>
+      </button>
+    </block>
+   </view>
+
+   <!--多选-->
+   <view class="dati_daxuan"  wx:if="{{timuArray[timuIndex].tixing === '多选'}}">
+     <view class="dati_daxuanTimu">（多选）{{timuArray[timuIndex].timu}}</view>
+     <block wx:for="{{timuArray[timuIndex].tixuanxiang}}">
+      <button>
+      <view class="dati_daxuanLeft">{{item.xuanxiang}}.</view>
+      <view class="dati_daxuanRight">{{item.xuanxiangtitle}}</view>
+      </button>
+     </block>
+   </view>
+  </scroll-view>
+</view>
+
+<view class="diBu">
+  <view class="diBuLeft">
+   <button bind:tap="shangyiti">上一题</button>
+  </view>
+  <view class="diBuCenter">
+    <button>答题卡</button>
+  </view>
+  <view class="diBuLeft">
+    <button bind:tap="xiayiti">下一题</button>
+  </view> 
+</view>

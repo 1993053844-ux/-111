@@ -1,0 +1,27 @@
+<!--pages/shouye/shouye.wxml-->
+<view class="shouye">
+ <scroll-view scroll-y>
+  <view class="shouye_lun">
+   <image src="/images/ssfx.png"></image>
+  </view>
+  <view class="shouye_dao">
+   <view class="shouye_daoGrid"wx:for="{{daoHang}}" wx:key="index">
+    <view class="shouye_daoGridTop" bind:tap="dianjidaohang" data-dizhiurl="{{item.lujing}}" >
+     <image src="{{item.imageUrl}}"></image>
+    </view>
+    <view class="shouye_daoGridBottom">
+       {{item.title}}
+    </view>
+   </view>
+  </view>
+  <view class="shouye_jilu">
+   <view class="shouye_jiluTitle">考试记录:</view>
+   <view class="shouye_jiluList">
+    <view class="shouye_jiluListTop">数学分析测试试题</view>
+    <view class="shouye_jiluListBottom">共计100道题</view>
+    <view class="shouye_jiluListBottom">创建时间 2025-08-21</view>
+   </view>
+   
+  </view>
+ </scroll-view>
+</view>

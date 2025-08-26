@@ -1,0 +1,52 @@
+{
+  "pages": [ 
+    "pages/shouye/shouye",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/AI/AI",
+    "pages/product/beitimoshi/beitimoshi",
+    "pages/product/lianximoshi/lianximoshi",
+    "pages/product/kaoshimoshi/kaoshimoshi"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#D2B48C",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "backgroundColorBottom": "yellow",
+    "backgroundColorTop": "pink",
+    "navigationBarTitleText": "数学分析题库",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
+    
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor":"#ff0000",
+    "backgroundColor":"#ffffff",
+    "borderStyle":"black",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页",
+        "iconPath": "images/1.jpg",
+        "selectedIconPath": "images/1.0.jpg"
+        
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/3.jpg",
+        "selectedIconPath": "images/3.0.jpg"
+        
+      },
+      {
+        "pagePath": "pages/AI/AI",
+        "text": "智能AI",
+        "iconPath": "images/4.jpg",
+        "selectedIconPath": "images/4.0.jpg"
+      }
+    ]
+  }
+  
+}
